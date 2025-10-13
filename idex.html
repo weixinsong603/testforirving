@@ -25,7 +25,19 @@
         };
     </script>
 </body>
+<body>
+    <h1>Welcome to My Custom Website</h1>
+    <button id="my-button">Click Me1</button>
 
+    <script>
+        document.getElementById('my-button').onclick = function() {
+            gtag('event', 'button_click', {
+                'component': 'my_button1'
+            });
+            alert('Button clicked! Event sent to Google Analytics.');
+        };
+    </script>
+</body>
 </html>
 
 <!-- <!DOCTYPE html>
@@ -39,4 +51,5 @@
     <h1>Hello, World!</h1>
 </body>
 </html> -->
+
 
