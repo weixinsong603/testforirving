@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Website</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXX');
+    </script>
+</head>
+<body>
+    <h1>Welcome to My Custom Website</h1>
+    <button id="my-button">Click Me</button>
+
+    <script>
+        document.getElementById('my-button').onclick = function() {
+            gtag('event', 'button_click', {
+                'component': 'my_button'
+            });
+            alert('Button clicked! Event sent to Google Analytics.');
+        };
+    </script>
+</body>
+</html>
