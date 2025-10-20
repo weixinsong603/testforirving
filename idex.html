@@ -23,17 +23,20 @@
     <script>
         document.getElementById('my-button1').onclick = function() {
             gtag('event', 'button_click', {
-                'component': 'my_button1'
+                'component': 'my_button1',
+                'branch': 'branch1'
             });
             alert('Button 1 clicked! Event sent to Google Analytics.');
         };
 
         document.getElementById('my-button2').onclick = function() {
             gtag('event', 'button_click', {
-                'component': 'my_button2'
+                'component': 'my_button2',
+                'branch': 'branch2'
             });
             alert('Button 2 clicked! Event sent to Google Analytics.');
         };
     </script>
 </body>
 </html>
+
